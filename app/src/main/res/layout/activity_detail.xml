@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_stage_name"
+            style="@style/MemberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="Heejin" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_personalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_detail_top">
+
+        <ImageView
+            android:id="@+id/iv_member_detail"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/heejin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_member_detail"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadPersonalInfo"
+                android:text="@string/personal_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextPersonalInfo"
+                    android:text="@string/real_name" />
+
+                <TextView
+                    android:id="@+id/tv_real_name"
+                    style="@style/TextPersonalInfo.Isi"
+                    tools:text="Park Chae Won" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextPersonalInfo"
+                    android:text="@string/birth_place" />
+
+                <TextView
+                    android:id="@+id/tv_birth_place"
+                    style="@style/TextPersonalInfo.Isi"
+                    tools:text="Bundang District, Seongnam, Gyeonggi Province, South Korea" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextPersonalInfo"
+                    android:text="@string/birth_date" />
+
+                <TextView
+                    android:id="@+id/tv_birth_date"
+                    style="@style/TextPersonalInfo.Isi"
+                    tools:text="October 19, 2000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextPersonalInfo"
+                    android:text="@string/animal" />
+
+                <TextView
+                    android:id="@+id/tv_animal"
+                    style="@style/TextPersonalInfo.Isi"
+                    tools:text="Rabbit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextPersonalInfo"
+                    android:text="@string/debut" />
+
+                <TextView
+                    android:id="@+id/tv_debut"
+                    style="@style/TextPersonalInfo.Isi"
+                    tools:text="September 26, 2016" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextPersonalInfo"
+                    android:text="@string/blood_type" />
+
+                <TextView
+                    android:id="@+id/tv_blood_type"
+                    style="@style/TextPersonalInfo.Isi"
+                    tools:text="A" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relative_personalInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadPersonalInfo"
+                android:text="@string/history"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_member_history"
+                style="@style/TextPersonalInfo.Isi"
+                tools:text="HeeJin's decision to become a singer occurred in middle school. At one time, both her sisters had similar dreams to hers, but they remained unfulfilled. She has stated that one of the reasons she became a singer was to make her sisters’ unfulfilled dreams come true and has cited her sisters as being her biggest supporters." />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

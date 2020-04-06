@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoonaVerse</string>
+    <string name="loona_member_list_sorted_by_debut_date">Loona Member List</string>
+    <string name="real_name">Real Name</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="birth_place">Birth Place</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="animal">Animal</string>
+    <string name="debut">Debut</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="history">History</string>
+    <string name="raihan_putra_ramadhan_rahartono">Raihan Putra Ramadhan Rahartono</string>
+    <string name="patsick216_gmail_com">patsick216@gmail.com</string>
+    <string name="semua_data_diambil_dari_nhttps_loonatheworld_fandom_com">Semua Data Diambil Dari \nhttps://loonatheworld.fandom.com/</string>
+    <string name="klik_untuk_membuka_website">Klik untuk membuka website</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_profile_dicoding"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_account"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/iv_loona_logo"
+                style="@style/LoonaLogoMain"
+                android:src="@drawable/loona_logo" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_loona_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/loona_member_list_sorted_by_debut_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_member"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_main" />
+
+    </LinearLayout>
+
+
+</ScrollView>
